@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>React + Webpack SPA Template</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta content="descriptions" charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="format-detection" content="telephone=no" />
+
+  <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" href="assets/css/app.min.css" media="screen">
+    <!-- 生产环境 -->
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'assets/js/index.js?_vc_=' + Date.now();
+        document.querySelector('head').appendChild(s);
+      })();
+
+    </script>
+    <% }else { %>
+      <!-- 开发环境 -->
+      <script src="./src/config/env/dev.js?_vc_=<%=Date.now()%>"></script>
+      <% } %>
+
+</head>
+
+<body>
+  <div id="app"></div>
+  <!--载入js-->
+</body>
+
+</html>

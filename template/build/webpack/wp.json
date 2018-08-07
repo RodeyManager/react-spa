@@ -1,0 +1,514 @@
+{
+  "context": "D:\\Sites\\GitHub\\me\\vue_spa\\template",
+  "entry": {
+    "app": [
+      "babel-polyfill",
+      "./src/main.js"
+    ]
+  },
+  "output": {
+    "path": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\dist",
+    "filename": "assets/js/[name].js",
+    "publicPath": "./",
+    "chunkFilename": "assets/js/[id].js"
+  },
+  "resolve": {
+    "extensions": [
+      ".js",
+      ".vue",
+      ".json"
+    ],
+    "alias": {
+      "vue$": "vue/dist/vue.esm.js",
+      "@": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\src"
+    }
+  },
+  "module": {
+    "rules": [
+      {
+        "test": {},
+        "loader": "vue-loader",
+        "options": {
+          "loaders": {
+            "css": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ],
+            "postcss": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ],
+            "less": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              },
+              {
+                "loader": "less-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ],
+            "sass": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              },
+              {
+                "loader": "sass-loader",
+                "options": {
+                  "indentedSyntax": true,
+                  "sourceMap": false
+                }
+              }
+            ],
+            "scss": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              },
+              {
+                "loader": "sass-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ],
+            "stylus": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              },
+              {
+                "loader": "stylus-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ],
+            "styl": [
+              "vue-style-loader",
+              {
+                "loader": "css-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              },
+              {
+                "loader": "stylus-loader",
+                "options": {
+                  "sourceMap": false
+                }
+              }
+            ]
+          },
+          "cssSourceMap": false,
+          "cacheBusting": true,
+          "transformToRequire": {
+            "video": [
+              "src",
+              "poster"
+            ],
+            "source": "src",
+            "img": "src",
+            "image": "xlink:href"
+          }
+        }
+      },
+      {
+        "test": {},
+        "loader": "babel-loader",
+        "include": [
+          "D:\\Sites\\GitHub\\me\\vue_spa\\template\\src",
+          "D:\\Sites\\GitHub\\me\\vue_spa\\template\\test"
+        ]
+      },
+      {
+        "test": {},
+        "loader": "url-loader",
+        "options": {
+          "limit": 10000,
+          "name": "assets/images/[name].[hash:7].[ext]"
+        }
+      },
+      {
+        "test": {},
+        "loader": "url-loader",
+        "options": {
+          "limit": 10000,
+          "name": "assets/media/[name].[hash:7].[ext]"
+        }
+      },
+      {
+        "test": {},
+        "loader": "url-loader",
+        "options": {
+          "limit": 10000,
+          "name": "assets/fonts/[name].[hash:7].[ext]"
+        }
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "less-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "sass-loader",
+            "options": {
+              "indentedSyntax": true,
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "sass-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "stylus-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "vue-style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": false
+            }
+          },
+          {
+            "loader": "stylus-loader",
+            "options": {
+              "sourceMap": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "node": {
+    "setImmediate": false,
+    "dgram": "empty",
+    "fs": "empty",
+    "net": "empty",
+    "tls": "empty",
+    "child_process": "empty"
+  },
+  "externals": {},
+  "devtool": false,
+  "plugins": [
+    {
+      "definitions": {
+        "process.env": {
+          "NODE_ENV": "\"production\""
+        }
+      }
+    },
+    {
+      "options": {
+        "test": {},
+        "extractComments": false,
+        "sourceMap": false,
+        "cache": false,
+        "parallel": true,
+        "uglifyOptions": {
+          "output": {
+            "comments": false
+          },
+          "compress": {
+            "warnings": false
+          }
+        }
+      }
+    },
+    {
+      "filename": "assets/css/[name].css",
+      "id": 1,
+      "options": {
+        "allChunks": false
+      }
+    },
+    {
+      "options": {
+        "cssProcessorOptions": {
+          "safe": true
+        },
+        "assetNameRegExp": {},
+        "canPrint": true
+      },
+      "lastCallInstance": {
+        "options": {
+          "assetProcessors": [
+            {
+              "phase": "compilation.optimize-chunk-assets",
+              "regExp": {}
+            }
+          ],
+          "canPrint": true
+        },
+        "deleteAssetsMap": {}
+      }
+    },
+    {
+      "options": {
+        "template": "index.html",
+        "filename": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\dist\\index.html",
+        "hash": true,
+        "inject": false,
+        "compile": true,
+        "favicon": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\src\\assets\\images\\favicon.ico",
+        "minify": {
+          "removeComments": true,
+          "collapseWhitespace": true,
+          "removeAttributeQuotes": true
+        },
+        "cache": true,
+        "showErrors": true,
+        "chunks": "all",
+        "excludeChunks": [],
+        "title": "Webpack App",
+        "xhtml": false,
+        "query": true,
+        "chunksSortMode": "dependency"
+      }
+    },
+    {
+      "options": {
+        "hashFunction": "md5",
+        "hashDigest": "base64",
+        "hashDigestLength": 4
+      }
+    },
+    {
+      "options": {}
+    },
+    {
+      "chunkNames": [
+        "vendor"
+      ],
+      "ident": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\webpack\\lib\\optimize\\CommonsChunkPlugin.js0"
+    },
+    {
+      "chunkNames": [
+        "manifest"
+      ],
+      "minChunks": null,
+      "ident": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\webpack\\lib\\optimize\\CommonsChunkPlugin.js1"
+    },
+    {
+      "chunkNames": [
+        "app"
+      ],
+      "minChunks": 3,
+      "children": true,
+      "async": "vendor-async",
+      "ident": "D:\\Sites\\GitHub\\me\\vue_spa\\template\\node_modules\\webpack\\lib\\optimize\\CommonsChunkPlugin.js2"
+    }
+  ]
+}
