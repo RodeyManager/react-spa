@@ -28,6 +28,27 @@
       <script src="./src/config/env/dev.js?_vc_=<%=Date.now()%>"></script>
       <% } %>
 
+        <!-- 页面自适应 -->
+        <!-- <script>
+          (function () {
+            'use strict';
+            // w 根据具体设计稿宽度修改
+            var w = 640,
+              b = document.documentElement,
+              a = function () {
+                var a = b.getBoundingClientRect().width;
+                b.style.fontSize = .0625 * (w <= a ? w : a) + "px";
+              },
+              c = null;
+            window.addEventListener("resize", function () {
+              clearTimeout(c);
+              c = setTimeout(a, 300)
+            });
+            a();
+          })();
+
+        </script> -->
+
 </head>
 
 <body>

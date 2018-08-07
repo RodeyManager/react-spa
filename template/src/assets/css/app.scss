@@ -22,6 +22,9 @@ label {
 
 #app {
   height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
 }
 
 *,
@@ -31,3 +34,5 @@ label {
   padding: 0;
   margin: 0;
 }
+
+@import 'modules/index';

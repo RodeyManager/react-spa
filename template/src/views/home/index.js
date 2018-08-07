@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import './style.scss';
 
 export default class Home extends Component {
-  render(){
+  render() {
     return (
-      <div><h1>Home Page</h1></div>
+      <div className="home-page">
+        <h1> Home Page </h1>
+      </div>
     );
   }
 }

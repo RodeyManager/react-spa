@@ -8,20 +8,11 @@ const baseWebpackConfig = require('./webpack.base.conf');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const styleLoaders = require('./style.loaders');
 
-const env = process.env.NODE_ENV === 'testing' ? require('../../config/test.env') : require('../../config/prd.env');
-// 生成样式loader，
-const cssLoaders = styleLoaders({
-  sourceMap: config.build.productionSourceMap,
-  extract: true,
-  usePostCSS: true
-});
+const env = config.env === 'testing' ? require('../../config/test.env') : require('../../config/prd.env');
 
 const webpackConfig = merge(baseWebpackConfig, {
-  // module: {
-  //   rules: cssLoaders
-  // },
+
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,

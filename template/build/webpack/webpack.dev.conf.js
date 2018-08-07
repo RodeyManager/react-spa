@@ -7,23 +7,12 @@ const baseWebpackConfig = require('./webpack.base.conf');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const portfinder = require('portfinder');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-const styleLoaders = require('./style.loaders');
-
 
 const HOST = process.env.HOST;
 const PORT = process.env.PORT && Number(process.env.PORT);
 
-// 生成样式loader，
-const cssLoaders = styleLoaders({
-  sourceMap: config.env === 'dev' ? config.dev.cssSourceMap : config.build.productionSourceMap,
-  extract: true,
-  usePostCSS: true
-});
-
 const devWebpackConfig = merge(baseWebpackConfig, {
-  // module: {
-  //   rules: cssLoaders
-  // },
+
   devtool: config.dev.devtool,
 
   devServer: {
@@ -33,7 +22,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     compress: true,
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
-    open: false,
+    open: true,
     overlay: config.dev.errorOverlay ? {
       warnings: false,
       errors: true

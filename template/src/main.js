@@ -4,11 +4,11 @@ import {
   BrowserRouter
 } from 'react-router-dom';
 import App from './app';
-import './assets/css/app.scss';
+import '@/assets/css/app.scss';
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <App/ >
   </BrowserRouter>,
   document.getElementById('app'));
